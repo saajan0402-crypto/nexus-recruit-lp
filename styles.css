@@ -86,7 +86,7 @@ a:hover { color: var(--ink); }
 .s-dark { background: var(--ink); color: var(--on-dark); }
 .s-light { background: var(--paper); color: var(--ink); }
 .s-light-2 { background: var(--paper-2); color: var(--ink); }
-section { padding-block: 44px 46px; }
+section { padding-block: 58px 62px; }
 
 /* ---------- 見出しユニット ---------- */
 .eyebrow {
@@ -118,7 +118,7 @@ h2 {
   color: var(--muted);
 }
 .s-dark .lede { color: var(--muted-dark); }
-.sec-head { margin-bottom: 22px; }
+.sec-head { margin-bottom: 30px; }
 
 /* ---------- ボタン ---------- */
 .btn {
@@ -227,7 +227,7 @@ h1 .num { font-family: var(--f-num); font-weight: 700; color: var(--accent-2); }
   display: grid;
   grid-template-columns: 84px 1fr;
   gap: 14px;
-  padding-block: 15px;
+  padding-block: 19px;
   border-bottom: 1px solid var(--line);
   align-items: start;
 }
@@ -238,7 +238,7 @@ h1 .num { font-family: var(--f-num); font-weight: 700; color: var(--accent-2); }
 .fact .hl { color: var(--accent-deep); }
 
 /* ---------- 給与ステップ ---------- */
-.steps { display: grid; gap: 18px; margin-bottom: 24px; }
+.steps { display: grid; gap: 26px; margin-bottom: 30px; }
 .step { display: grid; gap: 8px; }
 .step-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
 .step-no { font-family: var(--f-num); font-weight: 600; font-size: 11px; letter-spacing: .14em; color: var(--soft-dark); }
@@ -267,7 +267,7 @@ h1 .num { font-family: var(--f-num); font-weight: 700; color: var(--accent-2); }
 .note-dark { margin: 16px 0 0; font-size: 11px; line-height: 1.8; color: var(--soft-dark); }
 
 /* ---------- 先輩カード ---------- */
-.members { display: grid; gap: 14px; }
+.members { display: grid; gap: 18px; }
 .member {
   border: 1px solid var(--line);
   background: var(--card);
@@ -301,7 +301,7 @@ h1 .num { font-family: var(--f-num); font-weight: 700; color: var(--accent-2); }
 .disclaimer { margin: 18px 0 22px; font-size: 11px; line-height: 1.8; color: var(--muted); }
 
 /* ---------- 大きな数字（研修） ---------- */
-.reasons { display: grid; gap: 14px; }
+.reasons { display: grid; gap: 20px; }
 .reason { border-top: 2px solid var(--ink); padding-block: 18px 20px; display: grid; gap: 8px; }
 .reason.is-hl { border-top-color: var(--accent-deep); }
 .reason .fig { display: flex; align-items: baseline; gap: 6px; }
@@ -339,7 +339,7 @@ h1 .num { font-family: var(--f-num); font-weight: 700; color: var(--accent-2); }
 .perk-list {
   margin: 0 0 24px; padding: 20px 0 0; list-style: none;
   border-top: 1px solid var(--line);
-  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 14px;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 14px;
 }
 .perk-list li {
   display: grid; grid-template-columns: 15px 1fr; gap: 8px; align-items: start;
@@ -381,7 +381,7 @@ h1 .num { font-family: var(--f-num); font-weight: 700; color: var(--accent-2); }
 .area-panel > .stores { border-top: 1px solid var(--line); }
 .stores li {
   display: grid; grid-template-columns: 13px 1fr; gap: 7px; align-items: center;
-  padding-block: 9px; border-bottom: 1px solid var(--line-soft);
+  padding-block: 12px; border-bottom: 1px solid var(--line-soft);
   font-size: 13px; line-height: 1.5;
 }
 .more { margin-top: 16px; }
@@ -402,7 +402,7 @@ h1 .num { font-family: var(--f-num); font-weight: 700; color: var(--accent-2); }
 .flow { border-top: 1px solid var(--line); margin-bottom: 22px; }
 .flow-step {
   display: grid; grid-template-columns: 34px 1fr auto; gap: 12px;
-  padding-block: 16px; border-bottom: 1px solid var(--line); align-items: start;
+  padding-block: 20px; border-bottom: 1px solid var(--line); align-items: start;
 }
 .flow-no { font-family: var(--f-num); font-weight: 700; font-size: 20px; line-height: 1.2; color: var(--accent-deep); }
 .flow-body { display: grid; gap: 4px; }
@@ -423,7 +423,7 @@ h1 .num { font-family: var(--f-num); font-weight: 700; color: var(--accent-2); }
 .faq summary {
   list-style: none; cursor: pointer;
   display: grid; grid-template-columns: 18px 1fr 18px; gap: 10px; align-items: center;
-  min-height: 56px; padding: 12px;
+  min-height: 60px; padding: 16px 12px;
 }
 .faq summary::-webkit-details-marker { display: none; }
 .faq summary .q { font-family: var(--f-num); font-weight: 700; font-size: 14px; color: var(--accent-deep); }
@@ -455,10 +455,9 @@ h1 .num { font-family: var(--f-num); font-weight: 700; color: var(--accent-2); }
   min-height: 520px;
 }
 .form-slot iframe { width: 100%; border: 0; display: block; }
-.form-placeholder {
-  min-height: 504px; display: grid; place-content: center; justify-items: center; gap: 10px;
-  border: 1px dashed var(--line); border-radius: 4px; text-align: center;
-  color: var(--muted); font-size: 13px; line-height: 1.9; padding: 24px;
+.form-fallback {
+  margin: 0; padding: 32px 20px; text-align: center;
+  font-size: 13px; line-height: 1.95; color: var(--muted);
 }
 .consent { margin: 16px 0 0; font-size: 11.5px; line-height: 1.9; color: var(--muted); }
 
@@ -514,3 +513,48 @@ h1 .num { font-family: var(--f-num); font-weight: 700; color: var(--accent-2); }
   :root { --maxw: 440px; }
   .bar-inner { max-width: 440px; }
 }
+
+
+/* ---------- 引用バンド（息継ぎ用） ---------- */
+.quote-band { padding-block: 76px 80px; }
+.quote-band .wrap { display: grid; gap: 20px; }
+.quote-rule { width: 40px; height: 2px; background: var(--accent-2); }
+.quote {
+  margin: 0;
+  font-family: var(--f-serif);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 2.05;
+  letter-spacing: .01em;
+  color: var(--on-dark);
+  word-break: auto-phrase;
+}
+.quote-sub { margin: 0; font-size: 13px; line-height: 1.9; color: var(--muted-dark); }
+
+/* ---------- 写真バンド ----------
+   実写真が用意できたら、index.html の該当コメントを
+   このマークアップに差し替えるだけで入ります。 */
+
+
+/* ---------- 写真スクリム ----------
+   ストック写真の上に重ねる暗幕。目的は2つ。
+   ①ブランドのダークグリーンに色調を寄せる
+   ②人物を「風景の一部」として見せ、自社スタッフの紹介と誤読させない
+   実写真（NEXUS提供）に差し替えたら .is-light を足して薄くする。 */
+.scrim { position: relative; overflow: hidden; background: var(--ink); isolation: isolate; }
+.scrim > img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: grayscale(.38) contrast(1.06) brightness(.66);
+}
+.scrim::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: rgba(20, 35, 26, .52);
+  mix-blend-mode: multiply;
+}
+.scrim.is-light > img { filter: grayscale(.1) contrast(1.02) brightness(.92); }
+.scrim.is-light::after { background: rgba(20, 35, 26, .18); }
+
+/* 写真バンドは全幅。キャプションは付けない
+   （ストック写真に自社施設の説明を付けると事実と異なるため） */
+.band { margin: 0; }
+.band.scrim > img { height: 260px; }

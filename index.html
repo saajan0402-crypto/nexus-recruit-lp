@@ -15,6 +15,7 @@
 <meta property="og:image" content="https://recruit.nexus-gym.com/assets/ogp.png">
 <meta name="twitter:card" content="summary_large_image">
 
+<link rel="preconnect" href="https://images.unsplash.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600&display=swap">
@@ -88,12 +89,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
-  <!-- TODO: 差し替え。<img src="/assets/hero.webp" alt="" width="780" height="416" fetchpriority="high"> -->
-  <div class="hero-photo">
-    <p class="photo-slot">
-      <svg width="22" height="22"><use href="#i-photo"/></svg>
-      写真：トレーニング中のカット
-    </p>
+  <!-- 暫定：Unsplash（thisGUYshoots / @block_08）。NEXUS提供の実写真が届いたら
+       src を /assets/hero.webp に差し替え、.scrim に is-light を追加する -->
+  <div class="hero-photo scrim">
+    <img src="https://images.unsplash.com/photo-1653927956711-f2222a45e040?auto=format&fit=crop&w=960&h=500&q=70" alt="" width="960" height="500" fetchpriority="high">
   </div>
 
   <div class="wrap">
@@ -267,6 +266,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- 暫定：Unsplash（Morrow Solutions / @morrowsolutions） -->
+<figure class="band scrim">
+  <img src="https://images.unsplash.com/photo-1656774950529-44a6153521ee?auto=format&fit=crop&w=960&h=640&q=70" alt="" width="960" height="640" loading="lazy">
+</figure>
 <!-- ========== 05 研修 ========== -->
 <section class="s-light-2">
   <div class="wrap">
@@ -291,6 +294,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>売上ノルマを個人に課さない環境です。目の前のお客様に集中できます。</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ========== 息継ぎ（引用バンド） ========== -->
+<section class="s-dark quote-band">
+  <div class="wrap">
+    <span class="quote-rule"></span>
+    <p class="quote">お客様が弊社ジムを通して出会う、<br>新しい自分へ繋ぐ架け橋となる。</p>
+    <p class="quote-sub">NEXUSがトレーナーに求めているのは、突き詰めればこの一点です。</p>
   </div>
 </section>
 
@@ -363,6 +375,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- 暫定：Unsplash（ÇAĞIN KARGI / @caginkargi） -->
+<figure class="band scrim">
+  <img src="https://images.unsplash.com/photo-1613684708642-4fe5a4e031e8?auto=format&fit=crop&w=960&h=640&q=70" alt="" width="960" height="640" loading="lazy">
+</figure>
 <!-- ========== 08 キャリア ========== -->
 <section class="s-dark">
   <div class="wrap">
@@ -606,20 +622,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="line-block" id="line">
       <b>LINEで応募・質問する</b>
       <p>友だち追加して、1タップで応募できます。質問だけでも大丈夫です。</p>
-      <!-- TODO: href をLINE公式アカウントの友だち追加URLに差し替え -->
-      <a class="btn btn-primary-light" href="#" data-cta="line-main"><svg width="19" height="19"><use href="#i-chat"/></svg>LINEで友だち追加</a>
+      <a class="btn btn-primary-light" href="https://lin.ee/tHo9VZW" target="_blank" rel="noopener" data-cta="line-main"><svg width="19" height="19"><use href="#i-chat"/></svg>LINEで友だち追加</a>
     </div>
 
     <p class="or"><span>または</span></p>
 
     <div class="form-slot">
-      <!-- TODO: formrunの埋め込みタグに差し替え。
-           formrun側の「完了画面」を「外部ページ」にして
-           https://recruit.nexus-gym.com/thanks/ を指定すること。 -->
-      <div class="form-placeholder">
-        <svg width="26" height="26" style="color:var(--line)"><use href="#i-photo"/></svg>
-        formrunの埋め込みタグをここに設置します
-      </div>
+      <script src="https://sdk.form.run/js/v2/embed.js"></script>
+      <div
+        class="formrun-embed"
+        data-formrun-form="@hakoniwa-lab-SKJk7NUHRJl7lUjfAAht"
+        data-formrun-redirect="true"
+      ></div>
+      <noscript>
+        <p class="form-fallback">
+          フォームの表示にはJavaScriptが必要です。
+          お手数ですが<a href="https://lin.ee/tHo9VZW">LINEからご応募</a>ください。
+        </p>
+      </noscript>
     </div>
 
     <p class="consent">送信をもって、<a href="https://nexus-gym.com/legal.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意したものとみなします。</p>
