@@ -4,11 +4,15 @@
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: geolocation=(), microphone=(), camera=()
 
+# CSSとJSは毎回サーバーに確認しに行かせる。
+# 中身が変わっていなければ304が返るだけなので転送量はほぼゼロ。
+# 更新が即座に反映されるほうが、この規模のサイトでは重要。
 /styles.css
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=0, must-revalidate
 
 /main.js
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=0, must-revalidate
 
+# 画像はファイル名を変えて差し替える運用なので長期キャッシュでよい
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
